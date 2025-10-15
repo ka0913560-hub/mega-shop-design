@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mega Shop - Premium shopping experience with exclusive products and deals">
+  <meta name="keywords" content="shop, e-commerce, premium, fashion, electronics, home decor">
+  <title>Mega Shop | Premium Shopping Experience</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Mega Shop Home">
+        <span>Mega</span>Shop
+      </a>
+      
+      <nav class="main-nav">
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-icons">
+        <button class="icon-btn search-toggle" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+        <a href="#" class="icon-btn cart" aria-label="Shopping cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+      <div class="container">
+        <form class="search-form" role="search">
+          <input type="search" placeholder="Search products..." aria-label="Search products">
+          <button type="submit" aria-label="Submit search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <button class="search-close" aria-label="Close search">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text reveal-element" data-reveal="left">
+            <span class="overline">Limited time offer</span>
+            <h1>MEGA SALE</h1>
+            <p class="hero-discount">Up to <span>90% OFF</span></p>
+            <p class="hero-description">Discover our curated collection of premium products at unbeatable prices.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+          
+          <div class="hero-image reveal-element" data-reveal="right">
+            <img src="https://images.unsplash.com/photo-1511370235399-1802cae1d32f?auto=format&fit=crop&w=800&q=80" 
+                 alt="Premium headphones on minimalist background" 
+                 width="800" height="600">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories section-padding" id="categories">
+      <div class="container">
+        <div class="section-header reveal-element" data-reveal="bottom">
+          <h2 class="section-title">Shop by Category</h2>
+          <p class="section-subtitle">Explore our wide range of premium products</p>
+        </div>
+        
+        <div class="category-grid reveal-element" data-reveal="bottom">
+          <a href="#" class="category-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=400&q=80" 
+                   alt="Modern electronics and gadgets" 
+                   width="400" height="300">
+            </div>
+            <h3 class="card-title">Electronics</h3>
+          </a>
+          
+          <a href="#" class="category-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=400&q=80" 
+                   alt="Minimalist clothing collection" 
+                   width="400" height="300">
+            </div>
+            <h3 class="card-title">Clothing</h3>
+          </a>
+          
+          <a href="#" class="category-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=400&q=80" 
+                   alt="Modern home decor and furniture" 
+                   width="400" height="300">
+            </div>
+            <h3 class="card-title">Home</h3>
+          </a>
+          
+          <a href="#" class="category-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=400&q=80" 
+                   alt="Premium beauty and skincare products" 
+                   width="400" height="300">
+            </div>
+            <h3 class="card-title">Beauty</h3>
+          </a>
+          
+          <a href="#" class="category-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=400&q=80" 
+                   alt="Elegant accessories and jewelry" 
+                   width="400" height="300">
+            </div>
+            <h3 class="card-title">Accessories</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured section-padding" id="featured">
+      <div class="container">
+        <div class="section-header reveal-element" data-reveal="bottom">
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-subtitle">Handpicked selection of our finest items</p>
+        </div>
+        
+        <div class="product-grid reveal-element" data-reveal="bottom">
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80" 
+                   alt="Premium red sneakers on light background" 
+                   width="400" height="400">
+              <div class="product-actions">
+                <button class="icon-btn" aria-label="Add to wishlist">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <button class="icon-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Premium Sneakers</h3>
+              <div class="product-price">$49.99</div>
+              <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+          
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1589003077984-894e133dabab?auto=format&fit=crop&w=400&q=80" 
+                   alt="Modern smart speaker in sleek design" 
+                   width="400" height="400">
+              <div class="product-actions">
+                <button class="icon-btn" aria-label="Add to wishlist">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <button class="icon-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Smart Speaker</h3>
+              <div class="product-price">$39.99</div>
+              <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+          
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80" 
+                   alt="Ergonomic armchair in modern design" 
+                   width="400" height="400">
+              <div class="product-actions">
+                <button class="icon-btn" aria-label="Add to wishlist">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <button class="icon-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Ergonomic Armchair</h3>
+              <div class="product-price">$199.99</div>
+              <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+          
+          <article class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=400&q=80" 
+                   alt="Premium smartwatch with leather band" 
+                   width="400" height="400">
+              <div class="product-actions">
+                <button class="icon-btn" aria-label="Add to wishlist">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <button class="icon-btn" aria-label="Quick view">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Premium Smartwatch</h3>
+              <div class="product-price">$149.99</div>
+              <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        
+        <div class="view-all-wrapper reveal-element" data-reveal="bottom">
+          <a href="#" class="btn btn-outline">View All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter section-padding" id="newsletter">
+      <div class="container">
+        <div class="newsletter-wrapper reveal-element" data-reveal="bottom">
+          <div class="newsletter-content">
+            <h2 class="section-title">Join Our Newsletter</h2>
+            <p class="section-subtitle">Get 10% off your first order when you subscribe</p>
+          </div>
+          
+          <form class="newsletter-form" aria-label="Newsletter subscription">
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your email address" required 
+                     aria-label="Email address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <label class="checkbox-container">
+              <input type="checkbox" name="agree" id="agree" required>
+              <span class="checkmark"></span>
+              <span class="checkbox-text">I agree to receive marketing emails</span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <a href="#" aria-label="Mega Shop Home">
+              <span>Mega</span>Shop
+            </a>
+          </div>
+          <p class="footer-tagline">Redefining premium shopping experience since 2020.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Follow us on Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Follow us on Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Follow us on Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Follow us on Pinterest">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3 class="footer-heading">Shop</h3>
+          <ul class="footer-links">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Collections</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3 class="footer-heading">Help</h3>
+          <ul class="footer-links">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3 class="footer-heading">About</h3>
+          <ul class="footer-links">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3 class="footer-heading">Legal</h3>
+          <ul class="footer-links">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 Mega Shop. All rights reserved.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa" aria-label="Visa"></i>
+          <i class="fab fa-cc-mastercard" aria-label="Mastercard"></i>
+          <i class="fab fa-cc-amex" aria-label="American Express"></i>
+          <i class="fab fa-cc-paypal" aria-label="PayPal"></i>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </footer>
+
+  <!-- JavaScript for interactivity -->
+  <script>
+    // DOM Elements
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const searchToggle = document.querySelector('.search-toggle');
+    const searchOverlay = document.querySelector('.search-overlay');
+    const searchClose = document.querySelector('.search-close');
+    const themeToggle = document.querySelector('.theme-toggle');
+    const backToTop = document.getElementById('back-to-top');
+    
+    // Mobile menu toggle
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenuToggle.setAttribute('aria-expanded', 
+        mobileMenuToggle.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
+      navLinks.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+    });
+    
+    // Search functionality
+    searchToggle.addEventListener('click', () => {
+      searchOverlay.classList.add('active');
+      document.querySelector('.search-form input').focus();
+      document.body.classList.add('search-open');
+    });
+    
+    searchClose.addEventListener('click', () => {
+      searchOverlay.classList.remove('active');
+      document.body.classList.remove('search-open');
+    });
+    
+    // Dark mode toggle
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      
+      const isDarkMode = document.body.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDarkMode);
+      
+      // Update icon
+      const icon = themeToggle.querySelector('i');
+      if (isDarkMode) {
+        icon.classList.replace('fa-moon', 'fa-sun');
+      } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
+      }
+    });
+    
+    // Check for saved dark mode preference
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+      themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+    }
+    
+    // Back to top button
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        
+        if (href !== '#') {
+          e.preventDefault();
+          
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+    
+    // Image loading handling
+    const images = document.querySelectorAll('img');
+    
+    images.forEach(img => {
+      // Add loading attribute for better performance
+      img.setAttribute('loading', 'lazy');
+      
+      // Handle image loading events
+      img.addEventListener('load', () => {
+        img.classList.add('loaded');
+      });
+      
+      img.addEventListener('error', () => {
+        console.error(`Failed to load image: ${img.src}`);
+        // Set a fallback image for failed loads
+        img.src = `https://images.unsplash.com/photo-1504297050568-910d24c426d3?auto=format&fit=crop&w=${img.width}&q=75`;
+      });
+    });
+    
+    // Reveal animations on scroll
+    const revealElements = document.querySelectorAll('.reveal-element');
+    
+    const revealOnScroll = () => {
+      const windowHeight = window.innerHeight;
+      
+      revealElements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        
+        if (elementPosition < windowHeight - 100) {
+          const revealDirection = element.dataset.reveal || 'bottom';
+          element.classList.add('revealed', `reveal-from-${revealDirection}`);
+        }
+      });
+    };
+    
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
